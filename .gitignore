@@ -1,35 +1,10 @@
 # macOS system files
 .DS_Store
 
-# Node.js dependencies (if used)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Python cache (if using scripts like update_postersjson.py)
-__pycache__/
-*.py[cod]
-*.pyo
-
 # Editor-specific
 .vscode/
 .idea/
-*.swp
-
-# Output directories (Jekyll/GitHub Pages if using local builds)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
 
 # Log or temporary files
 *.log
-*.tmp
 
-# Ignore environment or config overrides
-.env
-*.local
-
-# Git conflict leftovers
-*.orig
