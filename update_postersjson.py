@@ -8,7 +8,7 @@ for f in sorted(os.listdir(folder)):
     if f.endswith('.pdf'):
         base = os.path.splitext(f)[0]
         posters.append({
-            "title": base.replace('_', ' ').title(),
+            "title": base.replace('_', ' '),
             "pdf": f"{folder}/{base}.pdf",
             # "thumb": f"{folder}/{base}_thumb.jpg"
         })

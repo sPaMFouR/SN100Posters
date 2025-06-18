@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <title>SN100 e-Poster Archive</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1>SN100 e-Poster Archive</h1>
+      <p>View and download posters from the SN100 Conference</p>
+    </header>
+
+    <!-- Main -->
+    <div id="main" class="alt">
+      <section class="main">
+        <div class="inner">
+          <header class="major">
+            <h2>Available Posters</h2>
+          </header>
+          <ul id="posterList" class="alt"></ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; Design Credits : <a href="https://html5up.net">HTML5 UP</a>.</p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Load posters.json and render list -->
+  <script>
+    fetch('posters.json')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('posterList');
+        data.forEach((poster, i) => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <strong>${i + 1}. ${poster.title}</strong><br />
+            <a href="${poster.pdf}" target="_blank" class="button small">View</a>
+            <a href="${poster.pdf}" download class="button small">Download</a>
+          `;
+          list.appendChild(li);
+        });
+      })
+      .catch(error => {
+        console.error("Failed to load posters:", error);
+        const list = document.getElementById('posterList');
+        list.innerHTML = '<li>Error loading posters.</li>';
+      });
+  </script>
+
+</body>
+</html>

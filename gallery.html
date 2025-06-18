@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+-->
+<html>
+<head>
+  <title>SN100 Auto Poster Display</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+  <iframe id="posterFrame" src="" allowfullscreen></iframe>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const frame = document.getElementById("posterFrame");
+    let posters = [];
+    let index = 0;
+
+    function showNextPoster() {
+      if (posters.length === 0) return;
+      frame.src = posters[index].pdf;
+      index = (index + 1) % posters.length;
+    }
+
+    fetch('posters.json')
+      .then(response => response.json())
+      .then(data => {
+        posters = data;
+        showNextPoster();
+        setInterval(showNextPoster, 30000); // 30 seconds interval
+      });
+  </script>
+
+</body>
+</html>
