@@ -60,7 +60,7 @@
         data.forEach((poster, i) => {
           const li = document.createElement('li');
           li.innerHTML = `
-            <strong>${i + 1}. ${poster.title}</strong><br />
+            <strong>${i + 1}. ${poster.author} – <em>${poster.title}</em></strong><br />
             <a href="${poster.pdf}" target="_blank" class="button small">View</a>
             <a href="${poster.pdf}" download class="button small">Download</a>
           `;
@@ -69,8 +69,7 @@
       })
       .catch(error => {
         console.error("Failed to load posters:", error);
-        const list = document.getElementById('posterList');
-        list.innerHTML = '<li>Error loading posters.</li>';
+        document.getElementById('posterList').innerHTML = '<li>Error loading posters.</li>';
       });
   </script>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Stellar by HTML5 UP
+  Stellar by HTML5 UP
 -->
 <html>
 <head>
@@ -15,7 +15,23 @@
       padding: 0;
       background: black;
       overflow: hidden;
+      font-family: system-ui, sans-serif;
     }
+
+    #fullscreenBtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+      padding: 10px 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
     iframe {
       width: 100vw;
       height: 100vh;
@@ -25,6 +41,7 @@
 </head>
 <body class="is-preload">
 
+  <button id="fullscreenBtn">Fullscreen</button>
   <iframe id="posterFrame" src="" allowfullscreen></iframe>
 
   <!-- Scripts -->
@@ -41,18 +58,7 @@
 
     function showNextPoster() {
       if (posters.length === 0) return;
-      frame.src = posters[index].pdf;
-      index = (index + 1) % posters.length;
-    }
-
-    fetch('posters.json')
-      .then(response => response.json())
-      .then(data => {
-        posters = data;
-        showNextPoster();
-        setInterval(showNextPoster, 30000); // 30 seconds interval
-      });
-  </script>
-
-</body>
-</html>
+      const poster = posters[index];
+      console.log(`Displaying: ${poster.author} - ${poster.title}`);
+      frame.src = poster.pdf;
+      index = (index + 1) % po
