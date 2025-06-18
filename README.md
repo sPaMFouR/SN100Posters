@@ -12,7 +12,7 @@ The webpage provides:
 - A <u>**Live e-Poster Gallery**</u> for display on the screens at the venue.
 - An <u>**e-Poster Archive**</u> where users can view and download submitted posters.
 
-> 🌐 Visit the conference website: [https://sites.google.com/view/supernova100](https://sites.google.com/view/supernova100)
+🌐 Visit the conference website: [https://sites.google.com/view/supernova100](https://sites.google.com/view/supernova100)
 
 
 ---
