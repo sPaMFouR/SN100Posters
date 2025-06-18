@@ -61,4 +61,28 @@
       const poster = posters[index];
       console.log(`Displaying: ${poster.author} - ${poster.title}`);
       frame.src = poster.pdf;
-      index = (index + 1) % po
+      index = (index + 1) % posters.length;
+    }
+
+    fetch('posters.json')
+      .then(response => response.json())
+      .then(data => {
+        posters = data;
+        showNextPoster();
+        setInterval(showNextPoster, 30000); // 30 seconds
+      });
+
+    document.getElementById("fullscreenBtn").addEventListener("click", () => {
+      const elem = document.documentElement;
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen(); // Safari
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      }
+    });
+  </script>
+
+</body>
+</html>
