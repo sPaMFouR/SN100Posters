@@ -84,19 +84,9 @@
       const poster = posters[index];
       console.log(`Displaying: ${poster.author} - ${poster.title}`);
 	  
-	  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
-	  
-      // frame.src = poster.pdf;
-	  if (isMobile) {
-	    // Show only the first poster, and notify user
-	    if (index === 0) {
-	      alert("Mobile view: This poster display is optimized for landscape mode. Rotation is disabled.");
-	      window.open(poster.pdf, '_blank');
-	    }
-	  } else {
-	    frame.src = poster.pdf;
-	    index = (index + 1) % posters.length;
-	  }
+	  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);	  
+      frame.src = poster.pdf;
+
 	}
 
     fetch('posters.json')
