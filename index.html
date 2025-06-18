@@ -7,8 +7,7 @@ title: "SN100 e-Poster Gallery"
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conference Poster Gallery</title>
+  <title>SN100 e-Poster Gallery</title>
   <style>
     body {
       font-family: sans-serif;
@@ -57,21 +56,26 @@ title: "SN100 e-Poster Gallery"
 </head>
 <body>
   <h1>e-Poster Gallery</h1>
-  <div class="gallery">
-    <!-- Repeat this block for each poster -->
-    <div class="poster">
-      <img src="posters/poster1_thumb.jpg" alt="Poster 1 Thumbnail">
-      <div class="poster-title">Poster Title 1</div>
-      <button class="view-button" onclick="window.open('posters/poster1.pdf', '_blank')">View Fullscreen</button>
-    </div>
-
-    <div class="poster">
-      <img src="posters/poster2_thumb.jpg" alt="Poster 2 Thumbnail">
-      <div class="poster-title">Poster Title 2</div>
-      <button class="view-button" onclick="window.open('posters/poster2.pdf', '_blank')">View Fullscreen</button>
-    </div>
-
-    <!-- Add more posters as needed -->
+  <div class="gallery" id="gallery">
+    <!-- JS will populate poster tiles here -->
   </div>
+
+  <script>
+    fetch('posters.json')
+      .then(response => response.json())
+      .then(data => {
+        const gallery = document.getElementById('gallery');
+        data.forEach(poster => {
+          const div = document.createElement('div');
+          div.className = 'poster';
+          div.innerHTML = `
+            // <img src="${poster.thumb}" alt="Poster thumbnail">
+            <div class="poster-title">${poster.title}</div>
+            <button class="view-button" onclick="window.open('display.html?file=${encodeURIComponent(poster.pdf)}', '_blank')">Display on Venue Screen</button>
+          `;
+          gallery.appendChild(div);
+        });
+      });
+  </script>
 </body>
 </html>
