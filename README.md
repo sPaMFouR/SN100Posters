@@ -6,7 +6,7 @@
 
 # e-Poster Gallery for the Conference "one hundred years of supernova science"
 
-![SN100 Conference Logo](./color.png)
+![SN100 Conference Logo](images/color.png)
 
 This repository hosts the webpage for the live display and the data archive for the e-Posters presented at the vonference <u>**one hundred years of supernova science**</u>, commemorating 100 years of supernova science. The conference will be held in Stockholm, Sweden, from <u>**August 18–22, 2025**</u>.
 
