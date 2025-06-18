@@ -14,6 +14,7 @@ The webpage provides:
 - An <u>**e-Poster Archive**</u> where users can view and download submitted posters.
 
 🌐 Visit the conference website: [https://sites.google.com/view/supernova100](https://sites.google.com/view/supernova100)
+
 <img src="images/color.png" alt="SN100 Conference Logo" width="20%" />
 
 
