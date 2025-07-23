@@ -4,7 +4,7 @@
 ![Conference Dates](https://img.shields.io/badge/Conference-August%2018–22%2C%202025-blue)
 ![Location](https://img.shields.io/badge/Location-Stockholm%2C%20Sweden-lightblue)
 
-# e-Poster Gallery for the Conference "one hundred years of supernova science"
+# e-Poster/Flash-talk Gallery for the Conference "one hundred years of supernova science"
 
 <img src="images/color.png" alt="SN100 Conference Logo" width="20%" />
 
@@ -16,13 +16,11 @@ The webpage provides:
 
 🌐 Visit the conference website: [https://sites.google.com/view/supernova100](https://sites.google.com/view/supernova100)
 
-
 ---
 
 ## e-Poster Upload Instructions
 
-e-Poster contributors should refer to the [Conference Website Upload Section](https://sites.google.com/view/supernova100/social-programme?authuser=0) for guidelines and upload instructions. *(A direct upload link will be embedded on the homepage soon.)*
-
+e-Poster/Flash-talk contributors should refer to the [Conference Website](https://sites.google.com/view/supernova100/social-programme?authuser=0) for guidelines and upload instructions and [Google Drive link](https://drive.google.com/drive/folders/12H96Eyd_w1s8vtMC1JLmng203zSGl1oC?usp=sharing) for uploading the posters.
 
 ---
 
