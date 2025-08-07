@@ -2,7 +2,7 @@ import os
 import json
 
 folder = 'posters'
-posters = []
+entries = {}
 
 # for f in sorted(os.listdir(folder)):
 #     if f.endswith('.pdf'):
