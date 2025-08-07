@@ -22,6 +22,8 @@ The webpage provides:
 
 e-Poster/Flash-talk contributors should refer to the [Conference Website](https://sites.google.com/view/supernova100/social-programme?authuser=0) for guidelines and upload instructions and [Google Drive link](https://drive.google.com/drive/folders/12H96Eyd_w1s8vtMC1JLmng203zSGl1oC?usp=sharing) for uploading the posters.
 
+- Deadline for Upload: August 11 23:59 UTC
+- Posters go Live: August 16 22:00 UTC
 ---
 
 ## Contact
