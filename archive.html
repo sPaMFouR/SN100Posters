@@ -52,7 +52,7 @@
   <script src="assets/js/main.js"></script>
 
   <!-- Load posters.json and render list -->
-  <script>
+  <!-- <script>
     fetch('posters.json')
       .then(response => response.json())
       .then(data => {
@@ -71,6 +71,37 @@
         console.error("Failed to load posters:", error);
         document.getElementById('posterList').innerHTML = '<li>Error loading posters.</li>';
       });
+  </script> -->
+
+  <script>
+    fetch('posters.json')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('posterList');
+        data.forEach((poster, i) => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <strong>${i + 1}. ${poster.author} – <em>${poster.title}</em></strong><br />
+            <a href="${poster.pdf}" target="_blank" class="button small">View ePoster</a>
+            <a href="${poster.pdf}" download class="button small">Download</a>
+            <a href="#" onclick="handleFlashTalk('${poster.slide}')" class="button small">View Flash Talk</a>
+          `;
+          list.appendChild(li);
+        });
+      })
+      .catch(error => {
+        console.error("Failed to load posters:", error);
+        document.getElementById('posterList').innerHTML = '<li>Error loading posters.</li>';
+      });
+
+  function handleFlashTalk(slide) {
+    if (!slide || slide === "null") {
+      alert("No Flash Talk exists for this slide.");
+    } else {
+      window.open(slide, '_blank');
+    }
+  }
+
   </script>
 
 </body>
