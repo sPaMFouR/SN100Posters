@@ -82,9 +82,8 @@
           const li = document.createElement('li');
           li.innerHTML = `
             <strong>${i + 1}. ${poster.author} – <em>${poster.title}</em></strong><br />
-            <a href="${poster.pdf}" target="_blank" class="button small">View ePoster</a>
-            <a href="${poster.pdf}" download class="button small">Download</a>
-            <a href="#" onclick="handleFlashTalk('${poster.slide}')" class="button small">View Flash Talk</a>
+            <a href="${poster.pdf}" target="_blank" class="button small">ePoster</a>
+            <a href="#" onclick="handleFlashTalk('${poster.slide}')" class="button small">Flash Talk</a>
           `;
           list.appendChild(li);
         });
