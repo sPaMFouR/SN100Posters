@@ -1,9 +1,6 @@
 import os
 import json
 
-folder = 'posters'
-entries = {}
-
 # for f in sorted(os.listdir(folder)):
 #     if f.endswith('.pdf'):
 #         base = os.path.splitext(f)[0]
@@ -18,48 +15,49 @@ entries = {}
 #             "pdf": f"{folder}/{f}"
 #         })
 
+folder = 'posters'
+entries = []
+
+# Step 1: Gather FlashTalks
+flash_talks = {}
+for f in os.listdir(folder):
+    if f.startswith("FlashTalk_") and f.endswith(".pdf"):
+        base = os.path.splitext(f)[0]
+        try:
+            _, rest = base.split("_", 1)
+            title_part, author_part = rest.rsplit("_", 1)
+            key = f"{title_part.strip().lower()}_{author_part.strip().lower()}"
+            flash_talks[key] = f"{folder}/{f}"
+        except ValueError:
+            print(f"Skipping malformed FlashTalk filename: {f}")
+
+# Step 2: Build entries only from ePosters
 for f in sorted(os.listdir(folder)):
-    if not f.endswith('.pdf'):
+    if not f.startswith("ePoster_") or not f.endswith(".pdf"):
         continue
 
     base = os.path.splitext(f)[0]
+    try:
+        _, rest = base.split("_", 1)
+        title_part, author_part = rest.rsplit("_", 1)
+    except ValueError:
+        print(f"Skipping malformed ePoster filename: {f}")
+        continue
 
-    if base.startswith("ePoster_"):
-        content = base[len("ePoster_"):]
-        if ' ' in content:
-            title, author = content.rsplit(' ', 1)
-        else:
-            title = content
-            author = "Unknown"
-        key = f"{title.strip().lower()}_{author.strip().lower()}"
-        entries[key] = {
-            "author": author.strip(),
-            "title": title.strip(),
-            "pdf": f"{folder}/{f}",
-            "slide": None
-        }
+    title = title_part.strip()
+    author = author_part.strip()
+    key = f"{title.lower()}_{author.lower()}"
 
-    elif base.startswith("FlashTalk_"):
-        content = base[len("FlashTalk_"):]
-        if ' ' in content:
-            title, author = content.rsplit(' ', 1)
-        else:
-            title = content
-            author = "Unknown"
-        key = f"{title.strip().lower()}_{author.strip().lower()}"
-        if key in entries:
-            entries[key]["slide"] = f"{folder}/{f}"
-        else:
-            entries[key] = {
-                "author": author.strip(),
-                "title": title.strip(),
-                "pdf": None,
-                "slide": f"{folder}/{f}"
-            }
+    slide_path = flash_talks.get(key, None)
 
-posters = list(entries.values())
+    entries.append({
+        "author": author,
+        "title": title,
+        "pdf": f"{folder}/{f}",
+        "slide": slide_path
+    })
 
+# Write to JSON
 with open('posters.json', 'w') as out:
-    json.dump(posters, out, indent=2)
-
-print(f"Successfully generated posters.json generated with {len(posters)} posters.")
+    json.dump(entries, out, indent=2)
+print(f"Successfully generated posters.json generated with {len(entries)} posters.")
