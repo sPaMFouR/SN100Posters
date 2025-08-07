@@ -25,32 +25,31 @@ for f in sorted(os.listdir(folder)):
     base = os.path.splitext(f)[0]
 
     if base.startswith("ePoster_"):
-        parts = base[len("ePoster_"):].rsplit('_', 1)
-        if len(parts) == 2:
-            title, author = parts
+        content = base[len("ePoster_"):]
+        if ' ' in content:
+            title, author = content.rsplit(' ', 1)
         else:
-            title = parts[0]
+            title = content
             author = "Unknown"
         key = f"{title.strip().lower()}_{author.strip().lower()}"
         entries[key] = {
             "author": author.strip(),
             "title": title.strip(),
             "pdf": f"{folder}/{f}",
-            "slide": None  # to be updated if FlashTalk exists
+            "slide": None
         }
 
     elif base.startswith("FlashTalk_"):
-        parts = base[len("FlashTalk_"):].rsplit('_', 1)
-        if len(parts) == 2:
-            title, author = parts
+        content = base[len("FlashTalk_"):]
+        if ' ' in content:
+            title, author = content.rsplit(' ', 1)
         else:
-            title = parts[0]
+            title = content
             author = "Unknown"
         key = f"{title.strip().lower()}_{author.strip().lower()}"
         if key in entries:
             entries[key]["slide"] = f"{folder}/{f}"
         else:
-            # Create new entry with slide only, pdf is None
             entries[key] = {
                 "author": author.strip(),
                 "title": title.strip(),
@@ -58,7 +57,6 @@ for f in sorted(os.listdir(folder)):
                 "slide": f"{folder}/{f}"
             }
 
-# Convert to list
 posters = list(entries.values())
 
 with open('posters.json', 'w') as out:
