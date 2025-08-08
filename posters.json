@@ -1,14 +1,44 @@
 [
   {
-    "author": "Avinash Singh",
-    "title": "Nebular Phase Evolution of SN2023ixf",
-    "pdf": "posters/ePoster_Nebular Phase Evolution of SN2023ixf_Avinash Singh.pdf",
+    "author": "Martin Solar",
+    "title": "CCSNe in Turbulent Molecular Clouds",
+    "pdf": "posters/ePoster_CCSNe in Turbulent Molecular Clouds_Martin Solar.pdf",
     "slide": null
   },
   {
-    "author": "Avinash Singh",
-    "title": "UV Plateau in SN2022ffg",
-    "pdf": "posters/ePoster_UV Plateau in SN2022ffg_Avinash Singh.pdf",
-    "slide": "posters/FlashTalk_UV Plateau in SN2022ffg_Avinash Singh.pdf"
+    "author": "Kopsacheili",
+    "title": "Discovery of new Optical and X-ray SN remnants in nearby galaxies",
+    "pdf": "posters/ePoster_Discovery of new Optical and X-ray SN remnants in nearby galaxies_Kopsacheili.pdf",
+    "slide": "posters/FlashTalk_Discovery of new optical and X-ray SN remnants in nearby galaxies_Kopsacheili.pdf"
+  },
+  {
+    "author": "Ryosuke Kobashi",
+    "title": "Exploring the Pre-SN environment of Tycho's SNR",
+    "pdf": "posters/ePoster_Exploring the Pre-SN environment of Tycho's SNR_Ryosuke Kobashi.pdf",
+    "slide": null
+  },
+  {
+    "author": "Dima Shishkin",
+    "title": "Point symmetries in Core-Collapse Supernovae",
+    "pdf": "posters/ePoster_Point symmetries in Core-Collapse Supernovae_Dima Shishkin.pdf",
+    "slide": null
+  },
+  {
+    "author": "Noam Soker",
+    "title": "The primary role of jets in powering CCSNe",
+    "pdf": "posters/ePoster_The primary role of jets in powering CCSNe_Noam Soker.pdf",
+    "slide": null
+  },
+  {
+    "author": "Artur Hakobyan",
+    "title": "Type Ia Progenitors",
+    "pdf": "posters/ePoster_Type Ia Progenitors_Artur Hakobyan.pdf",
+    "slide": null
+  },
+  {
+    "author": "Takashi Moriya",
+    "title": "Type Ibn SNe from Ultra-Stripped SN Progenitors",
+    "pdf": "posters/ePoster_Type Ibn SNe from Ultra-Stripped SN Progenitors_ Takashi Moriya.pdf",
+    "slide": null
   }
 ]
