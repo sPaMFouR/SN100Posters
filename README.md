@@ -8,7 +8,7 @@
 
 <img src="images/color.png" alt="SN100 Conference Logo" width="20%" />
 
-This repository hosts the webpage for the live display and the data archive for the e-Posters presented at the conference <u>**one hundred years of supernova science**</u>, to be held in Stockholm, Sweden, from <u>**August 18–22, 2025**</u>.
+This GitHub repository hosts the webpage for the live display and the data archive for the e-Posters/Flash-talks presented at the conference <u>**one hundred years of supernova science**</u>, to be held in Stockholm, Sweden, from <u>**August 18–22, 2025**</u>.
 
 The webpage provides:
 - A <u>**Live e-Poster Gallery**</u> for display on the screens at the venue.
