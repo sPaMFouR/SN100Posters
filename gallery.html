@@ -85,17 +85,20 @@
       console.log(`Displaying: ${poster.author} - ${poster.title}`);
 	  
 	  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);	  
-      frame.src = encodeURI(poster.pdf); 
+      const src = encodeURI(poster.pdf);
+      frame.src = src + (src.includes('?') ? '&' : '?') + 'v=' + Date.now(); // cache-bust
       index = (index + 1) % posters.length;
 
 	}
 
-    fetch('posters.json')
+    fetch('posters.json', { cache: 'no-cache' })
       .then(response => response.json())
       .then(data => {
         posters = data;
         showNextPoster();
         setInterval(showNextPoster, 5000); // 30 seconds
+        console.log(`Showing #${index + 1}/${posters.length}: ${poster.title}`);
+
       });
 
     document.getElementById("fullscreenBtn").addEventListener("click", () => {
