@@ -4,7 +4,7 @@
 -->
 <html>
 <head>
-  <title>SN100 Auto Poster Display</title>
+  <title>SN100 Auto ePoster Display</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -85,7 +85,8 @@
       console.log(`Displaying: ${poster.author} - ${poster.title}`);
 	  
 	  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);	  
-      frame.src = poster.pdf;
+      frame.src = encodeURI(poster.pdf); 
+      index = (index + 1) % posters.length;
 
 	}
 
