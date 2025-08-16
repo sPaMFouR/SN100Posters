@@ -1,25 +1,12 @@
 import os
 import json
 
-# for f in sorted(os.listdir(folder)):
-#     if f.endswith('.pdf'):
-#         base = os.path.splitext(f)[0]
-#         if ' - ' in base:
-#             author, title = base.split(' - ', 1)
-#         else:
-#             author = "Unknown"
-#             title = base
-#         posters.append({
-#             "author": author.strip(),
-#             "title": title.strip(),
-#             "pdf": f"{folder}/{f}"
-#         })
-
 folder = 'posters'
 entries = []
 
 # Step 1: Gather FlashTalks
 flash_talks = {}
+# for f in os.listdir(folder):
 for f in os.listdir(folder):
     if f.startswith("FlashTalk_") and f.endswith(".pdf"):
         base = os.path.splitext(f)[0]
@@ -58,6 +45,7 @@ for f in sorted(os.listdir(folder)):
     })
 
 # Write to JSON
+entries.sort(key=lambda x: x["author"].lower())
 with open('posters.json', 'w') as out:
     json.dump(entries, out, indent=2)
 print(f"Successfully generated posters.json generated with {len(entries)} posters.")
