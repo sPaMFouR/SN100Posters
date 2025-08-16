@@ -6,7 +6,6 @@ entries = []
 
 # Step 1: Gather FlashTalks
 flash_talks = {}
-# for f in os.listdir(folder):
 for f in os.listdir(folder):
     if f.startswith("FlashTalk_") and f.endswith(".pdf"):
         base = os.path.splitext(f)[0]
