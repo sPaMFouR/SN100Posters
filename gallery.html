@@ -93,7 +93,7 @@
       .then(data => {
         posters = data;
         showNextPoster();
-        setInterval(showNextPoster, 5000); // 30 seconds
+        setInterval(showNextPoster, 15000); // 30 seconds
         console.log(`Showing #${index + 1}/${posters.length}: ${poster.title}`);
       });
 
