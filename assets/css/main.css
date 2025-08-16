@@ -1861,7 +1861,7 @@ input, select, textarea {
 	.button.red:hover    { background-color: #e86161; }  /* strong red */
   
   
-	input[type="submit"],
+	/* input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -2019,7 +2019,7 @@ input, select, textarea {
 			button.primary.icon:before,
 			.button.primary.icon:before {
 				color: #ffffff !important;
-			}
+			} */
 
 /* Form */
 
