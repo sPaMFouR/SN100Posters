@@ -1849,14 +1849,14 @@ input, select, textarea {
 	}
 	
 	/* Color variants */
-	.button.gray   { background-color: #c3cdd2; }
-	.button.gray:hover   { background-color: #a5b1b7; }
+	.button.gray   { background-color: #939ea4; }
+	.button.gray:hover   { background-color: #4f91b3; }
 	
-	.button.purple { background-color: #d0cdd2; }
-	.button.purple:hover { background-color: #b9b5bb; }
+	.button.orange { background-color: #cac5be; }
+	.button.orange:hover { background-color: #b78977; }
 	
-	.button.red    { background-color: #e4d9d9; }
-	.button.red:hover    { background-color: #d2c1c1; }
+	.button.red    { background-color: #e4ddd9; }
+	.button.red:hover    { background-color: #e86161; }
 
   
 	input[type="submit"],
