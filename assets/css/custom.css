@@ -1,23 +1,3 @@
-/* Base look (override Stellar’s transparent / box-shadow buttons)
-#main .button,
-#footer .button,
-#header .button {
-  font-weight: bold;
-  padding: 0.6em 1em 0.4em 1em;
-  line-height: 1.2;
-  text-decoration: none;
-  color: #fff !important;
-  background-color: #ccc !dim-grey;
-  box-shadow: none !remove inset outline;             
-  border: 0;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;}
-
-#main .button:hover,
-#footer .button:hover,
-#header .button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
 
 /* Base look for PLAIN buttons only (no color class) */
 #main .button:not(.orange):not(.red):not(.gray),
@@ -65,3 +45,25 @@
 #main .button.gray:hover,
 #footer .button.gray:hover,
 #header .button.gray:hover { background-color: #4f91b3 !important; }
+
+
+/* Keep the spotlight image from overflowing the right edge */
+.spotlight {
+  flex-wrap: wrap;           /* allow the image to drop below if space is tight */
+  gap: 2em;                  /* use gap instead of a hard margin-left on the image */
+}
+
+.spotlight .image {
+  margin-left: 0 !important; /* cancel theme’s 4em push */
+  flex: 0 0 16em;            /* reserve up to 16em for the image */
+  max-width: 100%;           /* but never exceed the container width */
+}
+
+.spotlight .image img {
+  width: 100% !important;    /* scale the img to its container */
+  height: auto;
+  display: block;
+}
+
+/* Optional: if you see a horizontal scrollbar on tiny edge cases, hide it */
+#wrapper { overflow-x: hidden; }
