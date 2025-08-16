@@ -7,7 +7,7 @@
   line-height: 1.2;
   text-decoration: none;
   color: #fff !important;
-  background-color: #666 !important;        /* dim gray base */
+  background-color: #c8c8c8 !important;        /* dim gray base */
   box-shadow: none !important;               /* remove inset outline */
   border: 0;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
