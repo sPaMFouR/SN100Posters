@@ -51,6 +51,37 @@
       .then(response => response.json())
       .then(data => {
         const list = document.getElementById('posterList');
+        list.innerHTML = '';
+        data.forEach((poster, i) => {
+          const li = document.createElement('li');
+  
+          // Only show Flash Talk if slide exists and isn't the string "null"
+          const hasFlash = poster.slide && poster.slide !== 'null';
+          const flashBtn = hasFlash
+            ? `<a href="${poster.slide}" target="_blank" class="button small">Flash Talk</a>`
+            : '';
+  
+          li.innerHTML = `
+            <strong>${i + 1}. ${poster.author} – <em>${poster.title}</em></strong><br />
+            <a href="${poster.pdf}" target="_blank" class="button small">ePoster</a>
+            ${flashBtn}
+          `;
+          list.appendChild(li);
+        });
+      })
+      .catch(error => {
+        console.error("Failed to load posters:", error);
+        document.getElementById('posterList').innerHTML = '<li>Error loading posters.</li>';
+      });
+  </script>
+
+
+  <!-- <script>
+  // Fetch the ePoster data from the JSON file and populate the list with Error prompt on Flash Talk Slides
+    fetch('posters.json')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('posterList');
         data.forEach((poster, i) => {
           const li = document.createElement('li');
           li.innerHTML = `
@@ -74,7 +105,7 @@
     }
   }
 
-  </script>
+  </script> -->
 
 </body>
 </html>

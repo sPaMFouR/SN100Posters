@@ -47,4 +47,5 @@ for f in sorted(os.listdir(folder)):
 entries.sort(key=lambda x: x["author"].lower())
 with open('posters.json', 'w') as out:
     json.dump(entries, out, indent=2)
-print(f"Successfully generated posters.json generated with {len(entries)} posters.")
+print(f"Successfully generated posters.json generated with "
+      f"{len(entries)} posters.")
