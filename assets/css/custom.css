@@ -1,4 +1,4 @@
-/* Base look (override Stellar’s transparent / box-shadow buttons) */
+/* Base look (override Stellar’s transparent / box-shadow buttons)
 #main .button,
 #footer .button,
 #header .button {
@@ -7,11 +7,10 @@
   line-height: 1.2;
   text-decoration: none;
   color: #fff !important;
-  background-color: #c8c8c8 !important;        /* dim gray base */
-  box-shadow: none !important;               /* remove inset outline */
+  background-color: #ccc !dim-grey;
+  box-shadow: none !remove inset outline;             
   border: 0;
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;}
 
 #main .button:hover,
 #footer .button:hover,
@@ -19,6 +18,31 @@
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+
+/* Base look for PLAIN buttons only (no color class) */
+#main .button:not(.orange):not(.red):not(.gray),
+#footer .button:not(.orange):not(.red):not(.gray),
+#header .button:not(.orange):not(.red):not(.gray) {
+  font-weight: bold;
+  padding: 0.6em 1em 0.4em 1em;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important; /* super light / almost transparent */
+  box-shadow: none !important;
+  border: 0;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
+}
+
+#main .button:not(.orange):not(.red):not(.gray):hover,
+#footer .button:not(.orange):not(.red):not(.gray):hover,
+#header .button:not(.orange):not(.red):not(.gray):hover {
+  background-color: rgba(0, 0, 0, 0.4) !important;  /* semi-grey on hover */
+  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 
 /* Light base → saturated hover per variant */
 #main .button.orange,
