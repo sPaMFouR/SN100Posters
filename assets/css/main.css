@@ -1831,8 +1831,10 @@ input, select, textarea {
 		display: inline-block;
 		line-height: 1.2;
 		text-decoration: none;
-		transition: background-color 0.3s ease, 
-					transform 0.2s ease, 
+		color: white; /* keep text visible */
+		border-radius: 6px;
+		transition: background-color 0.3s ease,
+					transform 0.2s ease,
 					box-shadow 0.2s ease;
 	}
 	
@@ -1842,22 +1844,22 @@ input, select, textarea {
 		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 	}
 	
-	/* Optional: "press down" effect when clicked */
+	/* Pressed effect */
 	.button:active {
 		transform: translateY(-1px);
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 	}
 	
-	/* Color variants */
-	.button.gray   { background-color: #939ea4; }
-	.button.gray:hover   { background-color: #4f91b3; }
+	/* Color variants with light base → stronger hover */
+	.button.gray   { background-color: #a7c6d8; }   /* light blue */
+	.button.gray:hover   { background-color: #4f91b3; }  /* deep blue */
 	
-	.button.orange { background-color: #cac5be; }
-	.button.orange:hover { background-color: #b78977; }
+	.button.orange { background-color: #d9b5a8; }   /* light peach */
+	.button.orange:hover { background-color: #b78977; }  /* earthy brown */
 	
-	.button.red    { background-color: #e4ddd9; }
-	.button.red:hover    { background-color: #e86161; }
-
+	.button.red    { background-color: #f2bcbc; }   /* light red/pink */
+	.button.red:hover    { background-color: #e86161; }  /* strong red */
+  
   
 	input[type="submit"],
 	input[type="reset"],
