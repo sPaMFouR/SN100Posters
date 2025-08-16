@@ -1824,44 +1824,7 @@ input, select, textarea {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
-/* Button */
-	.button {
-		font-weight: bold;
-		padding: 0.6em 1em 0.4em 1em;
-		display: inline-block;
-		line-height: 1.2;
-		text-decoration: none;
-		color: white; /* keep text visible */
-		border-radius: 6px;
-		transition: background-color 0.3s ease,
-					transform 0.2s ease,
-					box-shadow 0.2s ease;
-	}
-	
-	/* Hover "lift" effect */
-	.button:hover {
-		transform: translateY(-3px);
-		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-	}
-	
-	/* Pressed effect */
-	.button:active {
-		transform: translateY(-1px);
-		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-	}
-	
-	/* Color variants with light base → stronger hover */
-	.button.gray   { background-color: #a7c6d8; }   /* light blue */
-	.button.gray:hover   { background-color: #4f91b3; }  /* deep blue */
-	
-	.button.orange { background-color: #d9b5a8; }   /* light peach */
-	.button.orange:hover { background-color: #b78977; }  /* earthy brown */
-	
-	.button.red    { background-color: #f2bcbc; }   /* light red/pink */
-	.button.red:hover    { background-color: #e86161; }  /* strong red */
-  
-  
-	/* input[type="submit"],
+	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -2019,7 +1982,7 @@ input, select, textarea {
 			button.primary.icon:before,
 			.button.primary.icon:before {
 				color: #ffffff !important;
-			} */
+			}
 
 /* Form */
 

@@ -1,0 +1,43 @@
+/* Base look (override Stellar’s transparent / box-shadow buttons) */
+#main .button,
+#footer .button,
+#header .button {
+  font-weight: bold;
+  padding: 0.6em 1em 0.4em 1em;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #fff !important;
+  background-color: #666 !important;        /* dim gray base */
+  box-shadow: none !important;               /* remove inset outline */
+  border: 0;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#main .button:hover,
+#footer .button:hover,
+#header .button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Light base → saturated hover per variant */
+#main .button.orange,
+#footer .button.orange,
+#header .button.orange { background-color: #d9b5a8 !important; }
+#main .button.orange:hover,
+#footer .button.orange:hover,
+#header .button.orange:hover { background-color: #b78977 !important; }
+
+#main .button.red,
+#footer .button.red,
+#header .button.red { background-color: #f2bcbc !important; }
+#main .button.red:hover,
+#footer .button.red:hover,
+#header .button.red:hover { background-color: #e86161 !important; }
+
+#main .button.gray,
+#footer .button.gray,
+#header .button.gray { background-color: #a7c6d8 !important; }
+#main .button.gray:hover,
+#footer .button.gray:hover,
+#header .button.gray:hover { background-color: #4f91b3 !important; }
