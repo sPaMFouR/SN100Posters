@@ -1,87 +1,15 @@
 [
   {
-    "author": "Ziwei Ding",
-    "title": "A 3D Kinematic Reconstruction of the Crab Nebula",
-    "pdf": "posters/ePoster_A 3D Kinematic Reconstruction of the Crab Nebula_Ziwei Ding.pdf",
-    "slide": "posters/FlashTalk_A 3D Kinematic Reconstruction of the Crab Nebula_Ziwei Ding.pdf"
+    "author": "Anjasha Gangopadhyay",
+    "title": "The transitions in interacting SNe",
+    "pdf": "posters/ePoster_The transitions in interacting SNe_Anjasha Gangopadhyay.pdf",
+    "slide": "posters/FlashTalk_The transitions in interacting SNe_Anjasha Gangopadhyay.pdf"
   },
   {
-    "author": "Yang Hu",
-    "title": "A H-Rich SLSN with Early Flash Features",
-    "pdf": "posters/ePoster_A H-Rich SLSN with Early Flash Features_Yang Hu.pdf",
-    "slide": "posters/FlashTalk_A H-Rich SLSN with Early Flash Features_Yang Hu.pdf"
-  },
-  {
-    "author": "Raphael Baerway",
-    "title": "A multiwavelength view of two interacting SNe",
-    "pdf": "posters/ePoster_A multiwavelength view of two interacting SNe_Raphael Baerway.pdf",
-    "slide": "posters/FlashTalk_A multiwavelength view of two interacting SNe_Raphael Baerway.pdf"
-  },
-  {
-    "author": "K. Tsalapatas",
-    "title": "A thermonuclear supernova interacting with H- and He- deficient circumstellar material",
-    "pdf": "posters/ePoster_A thermonuclear supernova interacting with H- and He- deficient circumstellar material_K. Tsalapatas.pdf",
-    "slide": "posters/FlashTalk_A thermonuclear supernova interacting with H- and He- deficient circumstellar material_K. Tsalapatas.pdf"
-  },
-  {
-    "author": "Natalie LeBaron",
-    "title": "AT2024wpp in UV to NIR - Most Luminous Fast Blue Optical Transient",
-    "pdf": "posters/ePoster_AT2024wpp in UV to NIR - Most Luminous Fast Blue Optical Transient_Natalie LeBaron.pdf",
-    "slide": "posters/FlashTalk_AT2024wpp in UV to NIR - Most Luminous Fast Blue Optical Transient_Natalie LeBaron.pdf"
-  },
-  {
-    "author": "Xinyue Sheng",
-    "title": "Attention-Based Preprocessing Framework for Improving Rare Transient Classification",
-    "pdf": "posters/ePoster_Attention-Based Preprocessing Framework for Improving Rare Transient Classification_Xinyue Sheng.pdf",
-    "slide": "posters/FlashTalk_Attention-Based Preprocessing Framework for Improving Rare Transient Classification_Xinyue Sheng.pdf"
-  },
-  {
-    "author": "Martin Solar",
-    "title": "CCSNe in Turbulent Molecular Clouds",
-    "pdf": "posters/ePoster_CCSNe in Turbulent Molecular Clouds_Martin Solar.pdf",
+    "author": "Artur Hakobyan",
+    "title": "Type Ia Progenitors",
+    "pdf": "posters/ePoster_Type Ia Progenitors_Artur Hakobyan.pdf",
     "slide": null
-  },
-  {
-    "author": "Soham Mandal",
-    "title": "Diagnosing the explosion mechanism of Type-Ia SN remnants",
-    "pdf": "posters/ePoster_Diagnosing the explosion mechanism of Type-Ia SN remnants_Soham Mandal.pdf",
-    "slide": "posters/FlashTalk_Diagnosing the explosion mechanism of Type-Ia SN remnants_Soham Mandal.pdf"
-  },
-  {
-    "author": "Maria Kopsacheili",
-    "title": "Discovery of new Optical and X-ray SN remnants in nearby galaxies",
-    "pdf": "posters/ePoster_Discovery of new Optical and X-ray SN remnants in nearby galaxies_Maria Kopsacheili.pdf",
-    "slide": "posters/FlashTalk_Discovery of new optical and X-ray SN remnants in nearby galaxies_Maria Kopsacheili.pdf"
-  },
-  {
-    "author": "Parviz Ghavamian",
-    "title": "Electron-Ion Equilibration from Proper Motions Studies of two Balmer-Dominated SNRs",
-    "pdf": "posters/ePoster_Electron-Ion Equilibration from Proper Motions Studies of two Balmer-Dominated SNRs_Parviz Ghavamian.pdf",
-    "slide": "posters/FlashTalk_Electron-Ion Equilibration from Proper Motions Studies of two Balmer-Dominated SNRs_Parviz Ghavamian.pdf"
-  },
-  {
-    "author": "Matt Grayling",
-    "title": "Environmental dependence of Secondary Max. in SN Ia",
-    "pdf": "posters/ePoster_Environmental dependence of Secondary Max. in SN Ia_Matt Grayling.pdf",
-    "slide": "posters/FlashTalk_Environmental dependence of Secondary Max. in SN Ia_Matt Grayling.pdf"
-  },
-  {
-    "author": "Ryosuke Kobashi",
-    "title": "Exploring the Pre-SN environment of Tycho's SNR",
-    "pdf": "posters/ePoster_Exploring the Pre-SN environment of Tycho's SNR_Ryosuke Kobashi.pdf",
-    "slide": null
-  },
-  {
-    "author": "Mariam Gogilashvili",
-    "title": "How Neutrino Oscillations Change Explodability of Massive Stars",
-    "pdf": "posters/ePoster_How Neutrino Oscillations Change Explodability of Massive Stars_Mariam Gogilashvili.pdf",
-    "slide": "posters/FlashTalk_How Neutrino Oscillations Change Explodability of Massive Stars_Mariam Gogilashvili.pdf"
-  },
-  {
-    "author": "Marie Cornelius",
-    "title": "Hunting for electron-neutrino lepton number crossings in CCSNe",
-    "pdf": "posters/ePoster_Hunting for electron-neutrino lepton number crossings in CCSNe_Marie Cornelius.pdf",
-    "slide": "posters/FlashTalk_Hunting for electron-neutrino lepton number crossings in CCSNe_Marie Cornelius.pdf"
   },
   {
     "author": "Beatrice Giudici",
@@ -96,40 +24,10 @@
     "slide": "posters/FlashTalk_Isotopic yields of thermonuclear explosions in non-accreting progenitors_Christina Fakiola.pdf"
   },
   {
-    "author": "Fionntan Callan",
-    "title": "Luminous Central Remnant in Radiative Transfer Simulations for Type Iax SNe",
-    "pdf": "posters/ePoster_Luminous Central Remnant in Radiative Transfer Simulations for Type Iax SNe_Fionntan Callan.pdf",
-    "slide": "posters/FlashTalk_Luminous Central Remnant in Radiative Transfer Simulations for Type Iax SNe_Fionntan Callan.pdf"
-  },
-  {
     "author": "Dima Shishkin",
     "title": "Point symmetries in Core-Collapse Supernovae",
     "pdf": "posters/ePoster_Point symmetries in Core-Collapse Supernovae_Dima Shishkin.pdf",
     "slide": null
-  },
-  {
-    "author": "Ryo Sawada",
-    "title": "Probing Pair-Instability SNe via 56Ni Decay Signatures",
-    "pdf": "posters/ePoster_Probing Pair-Instability SNe via 56Ni Decay Signatures_Ryo Sawada.pdf",
-    "slide": "posters/FlashTalk_Probing Pair-Instability SNe via 56Ni Decay Signatures_Ryo Sawada.pdf"
-  },
-  {
-    "author": "H. Umeda",
-    "title": "Properties of the lowest mass Fe-core collapse supernovae",
-    "pdf": "posters/ePoster_Properties of the lowest mass Fe-core collapse supernovae_H. Umeda.pdf",
-    "slide": "posters/FlashTalk_Properties of the lowest mass Fe-core collapse supernovae_H. Umeda.pdf"
-  },
-  {
-    "author": "Vincent Bronner",
-    "title": "Pulsating Red Supergiants - A New Perspective on Type II Supernova Light Curve Diversity",
-    "pdf": "posters/ePoster_Pulsating Red Supergiants - A New Perspective on Type II Supernova Light Curve Diversity_Vincent Bronner.pdf",
-    "slide": "posters/FlashTalk_Pulsating Red Supergiants - A New Perspective on Type II Supernova Light Curve Diversity_Vincent Bronner.pdf"
-  },
-  {
-    "author": "Takatoshi Ko",
-    "title": "Revealing the Unique Multi-Structural Features of a Historical Type Iax Supernova Remnant with a White Dwarf Through Multi-Wavelength Observations",
-    "pdf": "posters/ePoster_Revealing the Unique Multi-Structural Features of a Historical Type Iax Supernova Remnant with a White Dwarf Through Multi-Wavelength Observations_Takatoshi Ko.pdf",
-    "slide": "posters/FlashTalk_Revealing the Unique Multi-Structural Features of a Historical Type Iax Supernova Remnant with a White Dwarf Through Multi-Wavelength Observations_Takatoshi Ko.pdf"
   },
   {
     "author": "Eli Wiston",
@@ -138,28 +36,22 @@
     "slide": "posters/FlashTalk_SN 2012au - 13 Years of Broadband Radio Emission from the Golden Supernova_Eli Wiston.pdf"
   },
   {
-    "author": "Sand Hellman",
-    "title": "SN 2024ehs - A correlation between the strength and velocity of spectral lines in CCSNe",
-    "pdf": "posters/ePoster_SN 2024ehs - A correlation between the strength and velocity of spectral lines in CCSNe_Sand Hellman.pdf",
-    "slide": "posters/FlashTalk_SN 2024ehs - A correlation between the strength and velocity of spectral lines in CCSNe_Sand Hellman.pdf"
+    "author": "Etienne Russeil",
+    "title": "Superluminous supernovae classification in big data surveys",
+    "pdf": "posters/ePoster_Superluminous supernovae classification in big data surveys_Etienne Russeil.pdf",
+    "slide": "posters/FlashTalk_Superluminous supernovae classification in big data surveys_Etienne Russeil.pdf"
   },
   {
-    "author": "Saarah Hall",
-    "title": "SN2024uj - Molecule formation in a Ca-strong transient",
-    "pdf": "posters/ePoster_SN2024uj - Molecule formation in a Ca-strong transient_Saarah Hall.pdf",
-    "slide": "posters/FlashTalk_SN2024uj - Molecule formation in a Ca-strong transient_Saarah Hall.pdf"
+    "author": "Fionntan Callan",
+    "title": "Luminous Central Remnant in Radiative Transfer Simulations for Type Iax SNe",
+    "pdf": "posters/ePoster_Luminous Central Remnant in Radiative Transfer Simulations for Type Iax SNe_Fionntan Callan.pdf",
+    "slide": "posters/FlashTalk_Luminous Central Remnant in Radiative Transfer Simulations for Type Iax SNe_Fionntan Callan.pdf"
   },
   {
-    "author": "Stefan Taubenberger, Geza Csoernyei",
-    "title": "SNe II the rescue - Determination of H0 with Type II SNe in the Hubble Flow",
-    "pdf": "posters/ePoster_SNe II the rescue - Determination of H0 with Type II SNe in the Hubble Flow_Stefan Taubenberger, Geza Csoernyei.pdf",
-    "slide": "posters/FlashTalk_SNe II the rescue - Determination of H0 with Type II SNe in the Hubble Flow_Stefan Taubenberger, Geza Csoernyei.pdf"
-  },
-  {
-    "author": "Jacco Terwel",
-    "title": "Searching for late-time signals of SNe interacting with Circumstellar Material",
-    "pdf": "posters/ePoster_Searching for late-time signals of SNe interacting with Circumstellar Material_Jacco Terwel.pdf",
-    "slide": "posters/FlashTalk_Searching for late-time signals of SNe interacting with Circumstellar Material_Jacco Terwel.pdf"
+    "author": "H. Umeda",
+    "title": "Properties of the lowest mass Fe-core collapse supernovae",
+    "pdf": "posters/ePoster_Properties of the lowest mass Fe-core collapse supernovae_H. Umeda.pdf",
+    "slide": "posters/FlashTalk_Properties of the lowest mass Fe-core collapse supernovae_H. Umeda.pdf"
   },
   {
     "author": "Huei Sears",
@@ -168,16 +60,52 @@
     "slide": "posters/FlashTalk_Space-based Observations of Type Ia SNe at very late times_Huei Sears.pdf"
   },
   {
-    "author": "Etienne Russeil",
-    "title": "Superluminous supernovae classification in big data surveys",
-    "pdf": "posters/ePoster_Superluminous supernovae classification in big data surveys_Etienne Russeil.pdf",
-    "slide": "posters/FlashTalk_Superluminous supernovae classification in big data surveys_Etienne Russeil.pdf"
+    "author": "Jacco Terwel",
+    "title": "Searching for late-time signals of SNe interacting with Circumstellar Material",
+    "pdf": "posters/ePoster_Searching for late-time signals of SNe interacting with Circumstellar Material_Jacco Terwel.pdf",
+    "slide": "posters/FlashTalk_Searching for late-time signals of SNe interacting with Circumstellar Material_Jacco Terwel.pdf"
   },
   {
-    "author": "Szanna Zsiros",
-    "title": "The James Webb Space Telescope Captures the Dusty SN 2013ej",
-    "pdf": "posters/ePoster_The James Webb Space Telescope Captures the Dusty SN 2013ej_Szanna Zsiros.pdf",
-    "slide": "posters/FlashTalk_The James Webb Space Telescope Captures the Dusty SN 2013ej_Szanna Zsiros.pdf"
+    "author": "K. Tsalapatas",
+    "title": "A thermonuclear supernova interacting with H- and He- deficient circumstellar material",
+    "pdf": "posters/ePoster_A thermonuclear supernova interacting with H- and He- deficient circumstellar material_K. Tsalapatas.pdf",
+    "slide": "posters/FlashTalk_A thermonuclear supernova interacting with H- and He- deficient circumstellar material_K. Tsalapatas.pdf"
+  },
+  {
+    "author": "Maria Kopsacheili",
+    "title": "Discovery of new Optical and X-ray SN remnants in nearby galaxies",
+    "pdf": "posters/ePoster_Discovery of new Optical and X-ray SN remnants in nearby galaxies_Maria Kopsacheili.pdf",
+    "slide": "posters/FlashTalk_Discovery of new optical and X-ray SN remnants in nearby galaxies_Maria Kopsacheili.pdf"
+  },
+  {
+    "author": "Mariam Gogilashvili",
+    "title": "How Neutrino Oscillations Change Explodability of Massive Stars",
+    "pdf": "posters/ePoster_How Neutrino Oscillations Change Explodability of Massive Stars_Mariam Gogilashvili.pdf",
+    "slide": "posters/FlashTalk_How Neutrino Oscillations Change Explodability of Massive Stars_Mariam Gogilashvili.pdf"
+  },
+  {
+    "author": "Marie Cornelius",
+    "title": "Hunting for electron-neutrino lepton number crossings in CCSNe",
+    "pdf": "posters/ePoster_Hunting for electron-neutrino lepton number crossings in CCSNe_Marie Cornelius.pdf",
+    "slide": "posters/FlashTalk_Hunting for electron-neutrino lepton number crossings in CCSNe_Marie Cornelius.pdf"
+  },
+  {
+    "author": "Martin Solar",
+    "title": "CCSNe in Turbulent Molecular Clouds",
+    "pdf": "posters/ePoster_CCSNe in Turbulent Molecular Clouds_Martin Solar.pdf",
+    "slide": null
+  },
+  {
+    "author": "Matt Grayling",
+    "title": "Environmental dependence of Secondary Max. in SN Ia",
+    "pdf": "posters/ePoster_Environmental dependence of Secondary Max. in SN Ia_Matt Grayling.pdf",
+    "slide": "posters/FlashTalk_Environmental dependence of Secondary Max. in SN Ia_Matt Grayling.pdf"
+  },
+  {
+    "author": "Natalie LeBaron",
+    "title": "AT2024wpp in UV to NIR - Most Luminous Fast Blue Optical Transient",
+    "pdf": "posters/ePoster_AT2024wpp in UV to NIR - Most Luminous Fast Blue Optical Transient_Natalie LeBaron.pdf",
+    "slide": "posters/FlashTalk_AT2024wpp in UV to NIR - Most Luminous Fast Blue Optical Transient_Natalie LeBaron.pdf"
   },
   {
     "author": "Noam Soker",
@@ -186,21 +114,93 @@
     "slide": null
   },
   {
-    "author": "Anjasha Gangopadhyay",
-    "title": "The transitions in interacting SNe",
-    "pdf": "posters/ePoster_The transitions in interacting SNe_Anjasha Gangopadhyay.pdf",
-    "slide": "posters/FlashTalk_The transitions in interacting SNe_Anjasha Gangopadhyay.pdf"
+    "author": "Parviz Ghavamian",
+    "title": "Electron-Ion Equilibration from Proper Motions Studies of two Balmer-Dominated SNRs",
+    "pdf": "posters/ePoster_Electron-Ion Equilibration from Proper Motions Studies of two Balmer-Dominated SNRs_Parviz Ghavamian.pdf",
+    "slide": "posters/FlashTalk_Electron-Ion Equilibration from Proper Motions Studies of two Balmer-Dominated SNRs_Parviz Ghavamian.pdf"
   },
   {
-    "author": "Artur Hakobyan",
-    "title": "Type Ia Progenitors",
-    "pdf": "posters/ePoster_Type Ia Progenitors_Artur Hakobyan.pdf",
+    "author": "Raphael Baerway",
+    "title": "A multiwavelength view of two interacting SNe",
+    "pdf": "posters/ePoster_A multiwavelength view of two interacting SNe_Raphael Baerway.pdf",
+    "slide": "posters/FlashTalk_A multiwavelength view of two interacting SNe_Raphael Baerway.pdf"
+  },
+  {
+    "author": "Ryo Sawada",
+    "title": "Probing Pair-Instability SNe via 56Ni Decay Signatures",
+    "pdf": "posters/ePoster_Probing Pair-Instability SNe via 56Ni Decay Signatures_Ryo Sawada.pdf",
+    "slide": "posters/FlashTalk_Probing Pair-Instability SNe via 56Ni Decay Signatures_Ryo Sawada.pdf"
+  },
+  {
+    "author": "Ryosuke Kobashi",
+    "title": "Exploring the Pre-SN environment of Tycho's SNR",
+    "pdf": "posters/ePoster_Exploring the Pre-SN environment of Tycho's SNR_Ryosuke Kobashi.pdf",
     "slide": null
+  },
+  {
+    "author": "Saarah Hall",
+    "title": "SN2024uj - Molecule formation in a Ca-strong transient",
+    "pdf": "posters/ePoster_SN2024uj - Molecule formation in a Ca-strong transient_Saarah Hall.pdf",
+    "slide": "posters/FlashTalk_SN2024uj - Molecule formation in a Ca-strong transient_Saarah Hall.pdf"
+  },
+  {
+    "author": "Sand Hellman",
+    "title": "SN 2024ehs - A correlation between the strength and velocity of spectral lines in CCSNe",
+    "pdf": "posters/ePoster_SN 2024ehs - A correlation between the strength and velocity of spectral lines in CCSNe_Sand Hellman.pdf",
+    "slide": "posters/FlashTalk_SN 2024ehs - A correlation between the strength and velocity of spectral lines in CCSNe_Sand Hellman.pdf"
+  },
+  {
+    "author": "Soham Mandal",
+    "title": "Diagnosing the explosion mechanism of Type-Ia SN remnants",
+    "pdf": "posters/ePoster_Diagnosing the explosion mechanism of Type-Ia SN remnants_Soham Mandal.pdf",
+    "slide": "posters/FlashTalk_Diagnosing the explosion mechanism of Type-Ia SN remnants_Soham Mandal.pdf"
+  },
+  {
+    "author": "Stefan Taubenberger, Geza Csoernyei",
+    "title": "SNe II the rescue - Determination of H0 with Type II SNe in the Hubble Flow",
+    "pdf": "posters/ePoster_SNe II the rescue - Determination of H0 with Type II SNe in the Hubble Flow_Stefan Taubenberger, Geza Csoernyei.pdf",
+    "slide": "posters/FlashTalk_SNe II the rescue - Determination of H0 with Type II SNe in the Hubble Flow_Stefan Taubenberger, Geza Csoernyei.pdf"
+  },
+  {
+    "author": "Szanna Zsiros",
+    "title": "The James Webb Space Telescope Captures the Dusty SN 2013ej",
+    "pdf": "posters/ePoster_The James Webb Space Telescope Captures the Dusty SN 2013ej_Szanna Zsiros.pdf",
+    "slide": "posters/FlashTalk_The James Webb Space Telescope Captures the Dusty SN 2013ej_Szanna Zsiros.pdf"
   },
   {
     "author": "Takashi Moriya",
     "title": "Type Ibn SNe from Ultra-Stripped SN Progenitors",
     "pdf": "posters/ePoster_Type Ibn SNe from Ultra-Stripped SN Progenitors_Takashi Moriya.pdf",
     "slide": "posters/FlashTalk_Type Ibn SNe from Ultra-Stripped SN Progenitors_Takashi Moriya.pdf"
+  },
+  {
+    "author": "Takatoshi Ko",
+    "title": "Revealing the Unique Multi-Structural Features of a Historical Type Iax Supernova Remnant with a White Dwarf Through Multi-Wavelength Observations",
+    "pdf": "posters/ePoster_Revealing the Unique Multi-Structural Features of a Historical Type Iax Supernova Remnant with a White Dwarf Through Multi-Wavelength Observations_Takatoshi Ko.pdf",
+    "slide": "posters/FlashTalk_Revealing the Unique Multi-Structural Features of a Historical Type Iax Supernova Remnant with a White Dwarf Through Multi-Wavelength Observations_Takatoshi Ko.pdf"
+  },
+  {
+    "author": "Vincent Bronner",
+    "title": "Pulsating Red Supergiants - A New Perspective on Type II Supernova Light Curve Diversity",
+    "pdf": "posters/ePoster_Pulsating Red Supergiants - A New Perspective on Type II Supernova Light Curve Diversity_Vincent Bronner.pdf",
+    "slide": "posters/FlashTalk_Pulsating Red Supergiants - A New Perspective on Type II Supernova Light Curve Diversity_Vincent Bronner.pdf"
+  },
+  {
+    "author": "Xinyue Sheng",
+    "title": "Attention-Based Preprocessing Framework for Improving Rare Transient Classification",
+    "pdf": "posters/ePoster_Attention-Based Preprocessing Framework for Improving Rare Transient Classification_Xinyue Sheng.pdf",
+    "slide": "posters/FlashTalk_Attention-Based Preprocessing Framework for Improving Rare Transient Classification_Xinyue Sheng.pdf"
+  },
+  {
+    "author": "Yang Hu",
+    "title": "A H-Rich SLSN with Early Flash Features",
+    "pdf": "posters/ePoster_A H-Rich SLSN with Early Flash Features_Yang Hu.pdf",
+    "slide": "posters/FlashTalk_A H-Rich SLSN with Early Flash Features_Yang Hu.pdf"
+  },
+  {
+    "author": "Ziwei Ding",
+    "title": "A 3D Kinematic Reconstruction of the Crab Nebula",
+    "pdf": "posters/ePoster_A 3D Kinematic Reconstruction of the Crab Nebula_Ziwei Ding.pdf",
+    "slide": "posters/FlashTalk_A 3D Kinematic Reconstruction of the Crab Nebula_Ziwei Ding.pdf"
   }
 ]
