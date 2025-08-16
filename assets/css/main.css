@@ -1825,7 +1825,40 @@ input, select, textarea {
 	}
 
 /* Button */
+	.button {
+		font-weight: bold;
+		padding: 0.6em 1em 0.4em 1em;
+		display: inline-block;
+		line-height: 1.2;
+		text-decoration: none;
+		transition: background-color 0.3s ease, 
+					transform 0.2s ease, 
+					box-shadow 0.2s ease;
+	}
+	
+	/* Hover "lift" effect */
+	.button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	}
+	
+	/* Optional: "press down" effect when clicked */
+	.button:active {
+		transform: translateY(-1px);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	}
+	
+	/* Color variants */
+	.button.gray   { background-color: #c3cdd2; }
+	.button.gray:hover   { background-color: #a5b1b7; }
+	
+	.button.purple { background-color: #d0cdd2; }
+	.button.purple:hover { background-color: #b9b5bb; }
+	
+	.button.red    { background-color: #e4d9d9; }
+	.button.red:hover    { background-color: #d2c1c1; }
 
+  
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
