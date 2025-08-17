@@ -13,58 +13,62 @@
       background: black;
       overflow: hidden;
       font-family: system-ui, sans-serif;
+      height: 100%;
     }
 
-	#fullscreenBtn {
-	  position: absolute;
-	  top: 5px;
-	  right: 10px;
-	  z-index: 1000;
-	  padding: 8px 14px;
-	  background: transparent;
-	  color: white;
-	  font-size: 14px;
-	  font-weight: 500;
-	  border: 1px solid gray;
-	  border-radius: 6px;
-	  cursor: pointer;
-	  transition: background 0.3s, color 0.3s;
-	  line-height: 1;                /* Ensures vertical text alignment */
-	  display: inline-flex;          /* Enables alignment control */
-	  align-items: center;           /* Vertically centers text */
-	  justify-content: center;       /* Horizontally centers text (if needed) */
-	}
+    #fullscreenBtn {
+      position: fixed;
+      top: 8px;
+      right: 10px;
+      z-index: 1000;
+      padding: 8px 14px;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid gray;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #fullscreenBtn:hover {
+      background: gray;
+      color: black;
+    }
 
-	#fullscreenBtn:hover {
-	  background: gray;
-	  color: black;
-	}
+    /* Make the PDF truly fullscreen with no scrollbars */
+    iframe {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: block;
+      max-width: none;
+      max-height: none;
+    }
 
-	iframe {
-	  width: 100%;
-	  height: 100vh;
-	  max-width: 100%;
-	  border: none;
-	  display: block;
-	}
-	
-	/* For Mobile */
-	@media (max-width: 600px) {
-	  #fullscreenBtn {
-	    font-size: 12px;
-	    padding: 2px 2px;
-	    top: 3px;
-	    right: 3px;
-	  }
-	}
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      #fullscreenBtn {
+        font-size: 12px;
+        padding: 6px 10px;
+        top: 6px;
+        right: 6px;
+      }
+    }
   </style>
 </head>
 <body class="is-preload">
 
-  <button id="fullscreenBtn">Fullscreen</button>
+  <button id="fullscreenBtn" type="button">Fullscreen</button>
   <iframe id="posterFrame" src="" allowfullscreen></iframe>
 
-  <!-- Scripts -->
+  <!-- Scripts (keep your existing deps if you use them elsewhere) -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
@@ -76,37 +80,72 @@
     let posters = [];
     let index = 0;
 
+    /**
+     * Ensure the PDF opens with full-page fit across Chrome/Firefox.
+     * - Adds a cache-buster (?v=timestamp)
+     * - Appends fragment with zoom=page-fit & pagemode=none
+     * - Preserves existing query/fragment gracefully
+     */
+    function buildPdfUrlWithFitParams(rawUrl) {
+      let url = String(rawUrl);
+
+      // Add/extend query with cache-buster
+      const qSep = url.includes("?") ? "&" : "?";
+      url += qSep + "v=" + Date.now();
+
+      // If there is an existing fragment, merge ours; otherwise create a new fragment
+      const [base, hash = ""] = url.split("#");
+      const params = new URLSearchParams(hash);
+
+      // These are widely honored by Chrome & Firefox
+      // (Firefox uses PDF.js internally; Chrome's viewer also accepts this)
+      params.set("zoom", "page-fit");
+      params.set("pagemode", "none");
+
+      const mergedHash = params.toString(); // e.g. 'zoom=page-fit&pagemode=none'
+      return base + "#" + mergedHash;
+    }
+
     function showNextPoster() {
-      if (posters.length === 0) return;
+      if (!posters.length) return;
+
       const poster = posters[index];
+      const src = encodeURI(poster.pdf); // supports spaces & non-ASCII in path
+      frame.src = buildPdfUrlWithFitParams(src);
+
       console.log(`Displaying: ${poster.author} - ${poster.title}`);
-	  
-	  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);	  
-      const src = encodeURI(poster.pdf);
-      frame.src = src + (src.includes('?') ? '&' : '?') + 'v=' + Date.now(); // cache-bust
       index = (index + 1) % posters.length;
+    }
 
-	}
-
-    fetch('posters.json', { cache: 'no-cache' })
+    // Load the playlist (posters.json should be an array of { pdf, author, title })
+    fetch("posters.json", { cache: "no-cache" })
       .then(response => response.json())
       .then(data => {
-        posters = data;
+        posters = Array.isArray(data) ? data : [];
+        if (!posters.length) {
+          console.warn("No posters found in posters.json");
+          return;
+        }
+        console.log(`Loaded ${posters.length} posters`);
         showNextPoster();
-        setInterval(showNextPoster, 15000); // 30 seconds
-        console.log(`Showing #${index + 1}/${posters.length}: ${poster.title}`);
+        // Rotate every 15 seconds
+        setInterval(showNextPoster, 15000);
+      })
+      .catch(err => {
+        console.error("Failed to load posters.json:", err);
       });
 
+    // Fullscreen button
     document.getElementById("fullscreenBtn").addEventListener("click", () => {
       const elem = document.documentElement;
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) {
-        elem.webkitRequestFullscreen(); // Safari
-      } else if (elem.msRequestFullscreen) {
-        elem.msRequestFullscreen();
-      }
+      if (elem.requestFullscreen) elem.requestFullscreen();
+      else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen(); // Safari
+      else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
     });
+
+    // Optional: auto-enter fullscreen on first user key/click anywhere
+    // document.addEventListener("keydown", () => fullscreenBtn.click(), { once: true });
+    // document.addEventListener("click", () => fullscreenBtn.click(), { once: true });
   </script>
 
 </body>
