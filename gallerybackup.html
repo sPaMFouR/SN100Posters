@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>SN100 Auto ePoster Display</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+      font-family: system-ui, sans-serif;
+    }
+
+	#fullscreenBtn {
+	  position: absolute;
+	  top: 5px;
+	  right: 10px;
+	  z-index: 1000;
+	  padding: 8px 14px;
+	  background: transparent;
+	  color: white;
+	  font-size: 14px;
+	  font-weight: 500;
+	  border: 1px solid gray;
+	  border-radius: 6px;
+	  cursor: pointer;
+	  transition: background 0.3s, color 0.3s;
+	  line-height: 1;                /* Ensures vertical text alignment */
+	  display: inline-flex;          /* Enables alignment control */
+	  align-items: center;           /* Vertically centers text */
+	  justify-content: center;       /* Horizontally centers text (if needed) */
+	}
+
+	#fullscreenBtn:hover {
+	  background: gray;
+	  color: black;
+	}
+
+	iframe {
+	  width: 100%;
+	  height: 100vh;
+	  max-width: 100%;
+	  border: none;
+	  display: block;
+	}
+	
+	/* For Mobile */
+	@media (max-width: 600px) {
+	  #fullscreenBtn {
+	    font-size: 12px;
+	    padding: 2px 2px;
+	    top: 3px;
+	    right: 3px;
+	  }
+	}
+  </style>
+</head>
+<body class="is-preload">
+
+  <button id="fullscreenBtn">Fullscreen</button>
+  <iframe id="posterFrame" src="" allowfullscreen></iframe>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    const frame = document.getElementById("posterFrame");
+    let posters = [];
+    let index = 0;
+
+    function showNextPoster() {
+      if (posters.length === 0) return;
+      const poster = posters[index];
+      console.log(`Displaying: ${poster.author} - ${poster.title}`);
+	  
+	  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);	  
+      const src = encodeURI(poster.pdf);
+      frame.src = src + (src.includes('?') ? '&' : '?') + 'v=' + Date.now(); // cache-bust
+      index = (index + 1) % posters.length;
+
+	}
+
+    fetch('posters.json', { cache: 'no-cache' })
+      .then(response => response.json())
+      .then(data => {
+        posters = data;
+        showNextPoster();
+        setInterval(showNextPoster, 15000); // 30 seconds
+        console.log(`Showing #${index + 1}/${posters.length}: ${poster.title}`);
+      });
+
+    document.getElementById("fullscreenBtn").addEventListener("click", () => {
+      const elem = document.documentElement;
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen(); // Safari
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      }
+    });
+  </script>
+
+</body>
+</html>
