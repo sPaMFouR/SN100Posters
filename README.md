@@ -22,7 +22,7 @@ The webpage provides:
 
 ## e-Poster Upload Instructions
 
-e-Poster/Flash-talk contributors should refer to the [Confeerence ePoster Website](http://singhavinash.net/SN100Posters/) for guidelines and upload instructions and [Google Drive link](https://drive.google.com/drive/folders/12H96Eyd_w1s8vtMC1JLmng203zSGl1oC?usp=sharing) for uploading the posters.
+e-Poster/Flash-talk contributors should refer to the [Conference ePoster Website](http://singhavinash.net/SN100Posters/) for guidelines and upload instructions and [Google Drive link](https://drive.google.com/drive/folders/12H96Eyd_w1s8vtMC1JLmng203zSGl1oC?usp=sharing) for uploading the posters.
 
 - Deadline for Upload: August 11 23:59 UTC
 - Posters go Live: August 16 22:00 UTC
