@@ -11,16 +11,17 @@
 This GitHub repository hosts the webpage for the live display and the data archive for the e-Posters/Flash-talks presented at the conference <u>**one hundred years of supernova science**</u>, to be held in Stockholm, Sweden, from <u>**August 18–22, 2025**</u>.
 
 The webpage provides:
-- A <u>**Live e-Poster Gallery**</u> for display on the screens at the venue.
-- An <u>**e-Poster Archive**</u> where users can view and download submitted posters.
+- A <u>**Live e-Poster Gallery**</u> for running display of ePosters on the screens at the venue.
+- An <u>**e-Poster Archive**</u> where users can view and download submitted ePosters/Flash-Talks.
 
-🌐 Visit the conference website: [https://sites.google.com/view/supernova100](https://sites.google.com/view/supernova100)
+🌐 Conference website: [https://sites.google.com/view/supernova100](https://sites.google.com/view/supernova100)
+🌐 Conference schedule: [Conference Schedule](schedule/100YSC_ConferenceSchedule.pdf)
 
 ---
 
 ## e-Poster Upload Instructions
 
-e-Poster/Flash-talk contributors should refer to the [Conference Website](https://sites.google.com/view/supernova100/social-programme?authuser=0) for guidelines and upload instructions and [Google Drive link](https://drive.google.com/drive/folders/12H96Eyd_w1s8vtMC1JLmng203zSGl1oC?usp=sharing) for uploading the posters.
+e-Poster/Flash-talk contributors should refer to the [Confeerence ePoster Website](http://singhavinash.net/SN100Posters/) for guidelines and upload instructions and [Google Drive link](https://drive.google.com/drive/folders/12H96Eyd_w1s8vtMC1JLmng203zSGl1oC?usp=sharing) for uploading the posters.
 
 - Deadline for Upload: August 11 23:59 UTC
 - Posters go Live: August 16 22:00 UTC
