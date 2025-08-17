@@ -14,9 +14,9 @@ The webpage provides:
 - A <u>**Live e-Poster Gallery**</u> for running display of ePosters on the screens at the venue.
 - An <u>**e-Poster Archive**</u> where users can view and download submitted ePosters/Flash-Talks.
 
-🌐 Conference website: [https://sites.google.com/view/supernova100](https://sites.google.com/view/supernova100)
+🌐 Conference website: [Supernova100](https://sites.google.com/view/supernova100)
 
-🌐 Conference schedule: [Conference Schedule](schedule/100YSC_ConferenceSchedule.pdf)
+🌐 Conference schedule: [PDF Schedule](schedule/100YSC_ConferenceSchedule.pdf)
 
 ---
 
