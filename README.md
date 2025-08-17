@@ -15,6 +15,7 @@ The webpage provides:
 - An <u>**e-Poster Archive**</u> where users can view and download submitted ePosters/Flash-Talks.
 
 🌐 Conference website: [https://sites.google.com/view/supernova100](https://sites.google.com/view/supernova100)
+
 🌐 Conference schedule: [Conference Schedule](schedule/100YSC_ConferenceSchedule.pdf)
 
 ---
